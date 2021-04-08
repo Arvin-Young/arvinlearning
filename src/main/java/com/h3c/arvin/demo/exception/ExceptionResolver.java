@@ -10,6 +10,9 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 全局异常处理方式1
+ */
 @Component
 public class ExceptionResolver implements HandlerExceptionResolver {
     Logger logger = LoggerFactory.getLogger(getClass());
