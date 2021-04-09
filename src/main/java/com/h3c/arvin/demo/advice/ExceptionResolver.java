@@ -1,4 +1,4 @@
-package com.h3c.arvin.demo.exception;
+package com.h3c.arvin.demo.advice;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
