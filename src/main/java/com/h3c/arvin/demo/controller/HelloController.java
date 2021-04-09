@@ -1,8 +1,7 @@
 package com.h3c.arvin.demo.controller;
 
-import com.h3c.arvin.demo.annotation.IgnoreResponseAdvice;
 import com.h3c.arvin.demo.exception.AdException;
-import com.h3c.arvin.demo.vo.User;
+import com.h3c.arvin.demo.vo.UserBO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,11 +11,11 @@ public class HelloController {
 
     //@IgnoreResponseAdvice
     @RequestMapping("/test")
-    public User test() throws AdException {
+    public UserBO test() throws AdException {
         int age = 18;
         if (age == 18)
             throw new AdException("age error");
-        User user = new User("arvin", 18);
+        UserBO user = new UserBO("arvin", 18);
         return user;
     }
 }
