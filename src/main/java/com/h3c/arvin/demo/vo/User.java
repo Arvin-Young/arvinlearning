@@ -13,5 +13,7 @@ import lombok.NoArgsConstructor;
 public class User {
     private String name;
     private int age;
+    private boolean gender;
+    private String address;
     private String remark;
 }
